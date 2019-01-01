@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion myCompileSdkVersion
+    buildToolsVersion myBuildTools
+
+    defaultConfig {
+        applicationId "com.github.rezalotfi01.weberpro"
+        minSdkVersion myMinSdkVersion
+        targetSdkVersion myTargetSdkVersion
+        versionCode 1
+        versionName "1.0.2"
+
+        manifestPlaceholders = [onesignal_app_id               : "example-id",
+                                // Project number pulled from dashboard, local value is ignored.
+                                onesignal_google_project_number: "0000"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation "com.android.support:appcompat-v7:$mySupportVersion"
+    implementation "com.android.support:design:$mySupportVersion"
+    implementation "com.android.support:support-v4:$mySupportVersion"
+    implementation "com.android.support:cardview-v7:$mySupportVersion"
+    implementation "com.android.support:preference-v14:$mySupportVersion"
+    implementation "uk.co.chrisjenx:calligraphy:2.2.0" //library for set font
+    implementation "com.github.tibolte:elasticdownload:+" //elastic download module
+    annotationProcessor "com.jakewharton:butterknife:6.1.0"
+    implementation "com.jakewharton:butterknife:6.1.0"
+    implementation "com.liulishuo.filedownloader:library:1.4.1" //downloader
+    implementation "com.daasuu:animateHorizontalProgressBar:0.2.4" //pretty material design progressbar
+    implementation "com.github.fafaldo:fab-toolbar:+" //floating action button
+    implementation "net.steamcrafted:load-toast:1.0.10" //page reload circle toast
+    implementation "com.sdsmdg.tastytoast:tastytoast:0.1.1"//pretty toast lib
+    implementation 'com.github.GrenderG:Toasty:1.3.1'//pretty toast lib
+    implementation "com.txusballesteros:bubbles:1.2.1" //bubble for android
+    implementation "com.bezyapps.floatieslibrary:floaties:1.0.1"
+    implementation "com.j256.ormlite:ormlite-core:5.0"
+    implementation "com.j256.ormlite:ormlite-android:5.0"
+    implementation files("libs/itextg-5.5.9.jar")
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.github.medyo:android-about-page:1.2.4'
+}
+dependencies {
+    implementation "com.nineoldandroids:library:2.4.0"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "com.evernote:android-job:1.1.2"
+}
+
+dependencies {
+    implementation("com.mikepenz:materialdrawer:5.5.0@aar") {
+        transitive = true
+    }
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+    google()
+}
+dependencies {
+    implementation "com.github.HotBitmapGG:RingProgressBar:V1.2.2"
+    implementation project(path: ":filepicker")
+    implementation project(path: ":taptargetview")
+}
+
+dependencies {
+    implementation "com.onesignal:OneSignal:+@aar"
+
+    // Required for OneSignal, even if you have added FCM.
+    implementation "com.google.android.gms:play-services-gcm:+"
+
+    // Required for geotagging
+    implementation "com.google.android.gms:play-services-location:+"
+
+    // play-services-analytics is only needed when using 8.1.0 or older.
+    // implementation "com.google.android.gms:play-services-analytics:+"
+}
+dependencies {
+    implementation "com.google.android.gms:play-services-gcm:+"
+}

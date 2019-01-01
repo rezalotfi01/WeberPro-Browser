@@ -1,0 +1,134 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:icon="@null">
+
+    <PreferenceCategory android:title="@string/pref_downloading_general_setting">
+
+    <com.github.angads25.filepicker.view.FilePickerPreference
+        android:key="file_picker_pref"
+        android:title="@string/pref_file_pick_title"
+        android:summary="@string/pref_file_pick_summary"
+        app:error_dir="/mnt"
+        app:root_dir="/sdcard"
+        app:selection_mode="single_mode"
+        app:selection_type="dir_select"
+        app:extensions="@null" />
+
+    <SwitchPreference
+        android:defaultValue="true"
+        android:key="switch_auto_resume"
+        android:title="@string/pref_auto_resume_title"
+        android:summary="@string/pref_auto_resume_summary" />
+
+    <SwitchPreference
+        android:defaultValue="false"
+        android:key="downloads_number"
+        android:title="@string/pref_downloads_number_message_title"
+        android:summary="@string/pref_downloads_number_message_summary"/>
+
+    <ListPreference
+        android:defaultValue="5"
+        android:entries="@array/pref_parts_number_value"
+        android:entryValues="@array/pref_parts_number_value"
+        android:key="parts_number"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_parts_number_message_title"
+        android:summary="@string/pref_parts_number_message_summary"/>
+
+    <EditTextPreference
+        android:defaultValue="1024"
+        android:key="download_errors_number"
+        android:inputType="number"
+        android:title="@string/pref_errors_number_title"
+        android:summary="@string/pref_errors_number_summary"
+        android:negativeButtonText="@string/dialog_button_negative"
+        android:positiveButtonText="@string/dialog_button_positive"/>
+
+    <EditTextPreference
+        android:defaultValue="5"
+        android:key="download_main_errors_number"
+        android:inputType="number"
+        android:title="@string/pref__main_errors_number_title"
+        android:summary="@string/pref_main_errors_number_summary"
+        android:negativeButtonText="@string/dialog_button_negative"
+        android:positiveButtonText="@string/dialog_button_positive"/>
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/pref_multi_threading_type_titles"
+        android:entryValues="@array/pref_multi_threading_type_values"
+        android:key="multi_threading_type"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/pref_multi_threading_title"
+        android:summary="@string/pref_multi_threading_summary_smart"/>
+    </PreferenceCategory>
+
+
+    <PreferenceCategory android:title="@string/pref_downloading_download_size_limits">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:title="@string/pref_downloading_size_limits_checkbox_title"
+            android:summary="@string/pref_downloading_size_limits_checkbox_summary"
+            android:key="check_box_download_limit" />
+        <EditTextPreference
+            android:defaultValue="0"
+            android:dependency="check_box_download_limit"
+            android:key="max_volume_size_each_download"
+            android:inputType="number"
+            android:title="@string/pref_downloading_size_each_download_title"
+            android:summary="@string/pref_downloading_size_each_download_summary"
+            android:negativeButtonText="@string/dialog_button_negative"
+            android:positiveButtonText="@string/dialog_button_positive"/>
+        <EditTextPreference
+            android:defaultValue="0"
+            android:dependency="check_box_download_limit"
+            android:key="max_volume_size_all_downloads"
+            android:inputType="number"
+            android:title="@string/pref_downloading_size_all_downloads_title"
+            android:summary="@string/pref_downloading_size_all_downloads_summary"
+            android:negativeButtonText="@string/dialog_button_negative"
+            android:positiveButtonText="@string/dialog_button_positive"/>
+    </PreferenceCategory>
+
+
+    <!-- Preference Planing -->
+<!--
+    <PreferenceCategory android:title="@string/pref_planing_category_title">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_planing_download"
+            android:title="@string/pref_planing_download_check_title"
+            android:summary="@string/pref_planing_download_check_summary"/>
+        <Preference
+            android:key="planing_start_time"
+            android:title="@string/pref_planing_start_time_title"
+            android:summary="@string/pref_planing_start_time_summary"
+            android:onClick="onClickStartTime"
+            android:dependency="check_box_planing_download"/>
+        <Preference
+            android:key="planing_stop_time"
+            android:title="@string/pref_planing_stop_time_title"
+            android:summary="@string/pref_planing_stop_time_summary"
+            android:onClick="onClickStopTime"
+            android:dependency="check_box_planing_download"/>
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_turn_on_wifi"
+            android:title="@string/pref_turn_on_wifi_title"
+            android:summary="@string/pref_turn_on_wifi_summary"
+            android:dependency="check_box_planing_download"/>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_turn_off_wifi"
+            android:title="@string/pref_turn_off_wifi_title"
+            android:summary="@string/pref_turn_off_wifi_summary"
+            android:dependency="check_box_planing_download"/>
+
+    </PreferenceCategory>
+-->
+
+</PreferenceScreen>

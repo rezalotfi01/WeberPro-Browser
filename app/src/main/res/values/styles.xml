@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="BrowserActivityTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_300</item>
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="ReadabilityActivityTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHighlight">@color/blue_300</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="SettingActivityTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_300</item>
+        <item name="android:drawSelectorOnTop">true</item>
+        <item name="android:positiveButtonText">@string/dialog_button_positive</item>
+        <item name="android:negativeButtonText">@string/dialog_button_negative</item>
+    </style>
+
+    <style name="WhitelistActivityTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_300</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="TokenActivityTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:background">@color/cm_color_light</item>
+        <item name="android:windowBackground">@color/cm_color_light</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="ClearActivityTheme" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/text</item>
+        <item name="android:textColorHighlight">@color/blue_200</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:drawSelectorOnTop">true</item>
+    </style>
+
+    <style name="MyMaterialTheme" parent="MyMaterialTheme.Base">
+
+    </style>
+
+    <style name="MyMaterialTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowBackground">@drawable/app_background</item>
+    </style>
+
+    <style name="PopupTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!--<item name="android:windowIsFloating">false</item>-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <!--<item name="android:windowBackground">@drawable/app_background</item>-->
+    </style>
+
+    <style name="AboutActivityStyle" parent="MaterialTheme.Light">
+        <item name="colorPrimaryDark">@color/blue_800</item>
+    </style>
+
+    <style name="holderStyle" parent="android:Theme.NoDisplay">
+
+    </style>
+
+
+</resources>

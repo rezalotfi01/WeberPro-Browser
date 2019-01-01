@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/setting_title_browser">
+
+        <com.github.rezalotfi01.weberpro.View.SearchEngineListPreference
+                android:key="@string/sp_search_engine"
+                android:defaultValue="0"
+                android:title="@string/setting_title_search_engine"
+                android:summary="@string/setting_summary_search_engine_google"
+                android:entries="@array/setting_entries_search_engine"
+                android:entryValues="@array/setting_values_search_engine"
+                android:negativeButtonText="@string/dialog_button_negative">
+        </com.github.rezalotfi01.weberpro.View.SearchEngineListPreference>
+
+<!--        <ListPreference android:key="@string/sp_notification_priority"
+                        android:defaultValue="0"
+                        android:title="@string/setting_title_notification_priority"
+                        android:summary="@string/setting_summary_notification_priority_default"
+                        android:entries="@array/setting_entries_notification_priority"
+                        android:entryValues="@array/setting_values_notification_priority">
+        </ListPreference>-->
+
+        <ListPreference android:key="@string/sp_anchor"
+                        android:defaultValue="1"
+                        android:title="@string/setting_title_omnibox_position"
+                        android:summary="@string/setting_summary_omnibox_position_top"
+                        android:entries="@array/setting_entries_tab_position"
+                        android:entryValues="@array/setting_values_tab_position"
+                        android:negativeButtonText="@null">
+        </ListPreference>
+
+        <SwitchPreference android:key="@string/sp_omnibox_control"
+                            android:defaultValue="true"
+                            android:title="@string/setting_title_omnibox_control"
+                            android:summary="@string/setting_summary_omnibox_control">
+        </SwitchPreference>
+
+        <ListPreference
+            android:key="SP_BUBBLE_BUTTON_STATUS"
+            android:defaultValue="0"
+            android:title="@string/setting_title_bubble_button_status"
+            android:summary="@string/setting_summary_bub"
+            android:entries="@array/setting_entries_bubble_button_status"
+            android:entryValues="@array/setting_values_bubble_button_status"
+            android:negativeButtonText="@null">
+
+        </ListPreference>
+
+        <ListPreference
+            android:key="SP_DEFAULT_DOWNLOADER"
+            android:defaultValue="0"
+            android:title="@string/setting_title_default_downloader"
+            android:summary="@string/setting_summary_default_downloader"
+            android:entries="@array/setting_entries_default_downloader"
+            android:entryValues="@array/setting_values_default_downloader"
+            android:negativeButtonText="@null">
+        </ListPreference>
+
+
+        <ListPreference android:key="@string/sp_volume"
+                        android:defaultValue="1"
+                        android:title="@string/setting_title_volume_control"
+                        android:summary="@string/setting_summary_vc_switch_tabs"
+                        android:entries="@array/setting_entries_volume_control"
+                        android:entryValues="@array/setting_values_volume_control"
+                        android:negativeButtonText="@null">
+        </ListPreference>
+
+        <SwitchPreference android:key="@string/sp_images"
+                            android:defaultValue="true"
+                            android:title="@string/setting_title_images"
+                            android:summary="@string/setting_summary_images">
+        </SwitchPreference>
+
+        <SwitchPreference android:key="@string/sp_cookies"
+                            android:defaultValue="true"
+                            android:title="@string/setting_title_cookie"
+                            android:summary="@string/setting_summary_cookie">
+        </SwitchPreference>
+
+        <SwitchPreference android:key="@string/sp_javascript"
+                            android:defaultValue="true"
+                            android:title="@string/setting_title_javascript"
+                            android:summary="@string/setting_summary_javascript">
+        </SwitchPreference>
+
+        <SwitchPreference android:key="@string/sp_location"
+                          android:defaultValue="false"
+                          android:title="@string/setting_title_location"
+                          android:summary="@string/setting_summary_location">
+        </SwitchPreference>
+
+        <SwitchPreference android:key="@string/sp_multiple_windows"
+                            android:defaultValue="false"
+                            android:title="@string/setting_title_multiple_windows"
+                            android:summary="@string/setting_summary_multiple_windows">
+        </SwitchPreference>
+
+        <SwitchPreference android:key="@string/sp_scroll_bar"
+                            android:defaultValue="true"
+                            android:title="@string/setting_title_scroll_bar"
+                            android:summary="@string/setting_summary_scroll_bar">
+        </SwitchPreference>
+
+        <SwitchPreference android:key="@string/sp_text_reflow"
+                            android:defaultValue="true"
+                            android:title="@string/setting_title_text_reflow"
+                            android:summary="@string/setting_summary_text_reflow">
+        </SwitchPreference>
+
+        <com.github.rezalotfi01.weberpro.View.UserAgentListPreference
+                android:key="@string/sp_user_agent"
+                android:defaultValue="0"
+                android:title="@string/setting_title_user_agent"
+                android:summary="@string/setting_summary_user_agent_default"
+                android:entries="@array/setting_entries_user_agent"
+                android:entryValues="@array/setting_values_user_agent"
+                android:negativeButtonText="@string/dialog_button_negative">
+        </com.github.rezalotfi01.weberpro.View.UserAgentListPreference>
+
+        <ListPreference android:key="@string/sp_rendering"
+                        android:defaultValue="0"
+                        android:title="@string/setting_title_rendering"
+                        android:summary="@string/setting_summary_rendering_default"
+                        android:entries="@array/setting_entries_rendering"
+                        android:entryValues="@array/setting_values_rendering"
+                        android:negativeButtonText="@null">
+        </ListPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_title_adblock">
+
+        <SwitchPreference android:key="@string/sp_ad_block"
+                            android:defaultValue="true"
+                            android:title="@string/setting_title_adblock"
+                            android:summary="@string/setting_summary_adblock">
+        </SwitchPreference>
+
+        <Preference android:title="@string/setting_title_whitelist"
+                    android:summary="@string/setting_summary_whitelist">
+        </Preference>
+
+        <Preference android:title="@string/setting_title_export_whilelist" />
+
+        <Preference android:title="@string/setting_title_import_whilelist" />
+
+    </PreferenceCategory>
+
+<!--    <PreferenceCategory android:title="@string/setting_title_readability">
+
+        <CheckBoxPreference android:key="@string/sp_readability"
+                            android:defaultValue="false"
+                            android:title="@string/setting_title_readability"
+                            android:summary="@string/setting_summary_readability">
+        </CheckBoxPreference>
+
+        <Preference android:title="@string/setting_title_token"
+                    android:summary="@string/setting_summary_token">
+        </Preference>
+
+    </PreferenceCategory>-->
+
+    <PreferenceCategory android:title="@string/setting_title_data">
+
+        <SwitchPreference android:key="@string/sp_passwords"
+                            android:defaultValue="true"
+                            android:title="@string/setting_title_passwords"
+                            android:summary="@string/setting_summary_passwords">
+        </SwitchPreference>
+
+        <Preference android:title="@string/setting_title_export_bookmarks" />
+
+        <Preference android:title="@string/setting_title_import_bookmarks" />
+
+        <Preference android:title="@string/setting_title_clear_control" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/setting_title_others">
+
+        <Preference android:title="@string/setting_title_version"
+                    android:summary="@string/app_version">
+        </Preference>
+
+        <!--<Preference android:title="@string/setting_title_license" />-->
+
+        <Preference android:title="@string/setting_title_about" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

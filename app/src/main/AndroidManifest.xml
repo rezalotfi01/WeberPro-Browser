@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.github.rezalotfi01.weberpro">
+
+    <!-- Permission -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- wakelock helps Trigger work well, if you really don't like it, remove it, doesn't matter -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- that's the point why Trigger can recover persist-able job after device rebooting, if you don't need it, never mind -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+
+    <application
+        android:name="com.github.rezalotfi01.weberpro.Application.WeberApplication"
+        android:allowBackup="true"
+        android:enabled="true"
+        android:fullBackupContent="@xml/backup_config"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/MyMaterialTheme"
+        tools:replace="android:theme">
+        <!-- android:theme="@style/AppTheme"> -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+
+        <!-- HolderActivity -->
+        <activity
+            android:name="com.github.rezalotfi01.weberpro.Activity.HolderActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:theme="@style/holderStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/app_scheme_http" />
+                <data android:scheme="@string/app_scheme_https" />
+            </intent-filter>
+        </activity>
+
+        <!-- HolderService -->
+        <service
+            android:name="com.github.rezalotfi01.weberpro.Service.HolderService"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name" />
+
+        <!-- BrowserActivity -->
+        <activity
+            android:name="com.github.rezalotfi01.weberpro.Activity.BrowserActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection|locale"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/BrowserActivityTheme"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.WEB_SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <meta-data android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <!-- ReadabilityActivity -->
+        <activity
+            android:name="com.github.rezalotfi01.weberpro.Activity.ReadabilityActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/readability_label"
+            android:theme="@style/ReadabilityActivityTheme" />
+
+        <!-- SettingActivity -->
+        <activity
+            android:name="com.github.rezalotfi01.weberpro.Activity.SettingActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/setting_label"
+            android:theme="@style/SettingActivityTheme" />
+        <!-- android:theme="@style/SettingActivityTheme" /> -->
+
+
+        <!-- WhitelistActivity -->
+        <activity
+            android:name="com.github.rezalotfi01.weberpro.Activity.WhitelistActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/whitelist_label"
+            android:theme="@style/WhitelistActivityTheme" />
+
+        <!-- TokenActivity -->
+        <activity
+            android:name="com.github.rezalotfi01.weberpro.Activity.TokenActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/token_label"
+            android:theme="@style/TokenActivityTheme" />
+
+        <!-- ClearActivity -->
+        <activity
+            android:name="com.github.rezalotfi01.weberpro.Activity.ClearActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/clear_label"
+            android:theme="@style/ClearActivityTheme" />
+
+        <!-- ClearService -->
+        <service
+            android:name="com.github.rezalotfi01.weberpro.Service.ClearService"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.github.rezalotfi01.weberpro.Activity.DownloadActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/downloads_label"
+            android:parentActivityName="com.github.rezalotfi01.weberpro.Activity.BrowserActivity"
+            android:theme="@style/MyMaterialTheme" />
+        <activity
+            android:name="com.github.rezalotfi01.weberpro.Activity.DownloadSettingsActivity"
+            android:configChanges="layoutDirection|locale"
+            android:label="@string/title_activity_download_settings"
+            android:parentActivityName="com.github.rezalotfi01.weberpro.Activity.DownloadActivity"
+            android:theme="@style/SettingActivityTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.github.rezalotfi01.weberpro.Activity.DownloadActivity" />
+        </activity>
+
+        <service
+            android:name="com.github.rezalotfi01.weberpro.Service.DownloaderService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity android:name="com.github.rezalotfi01.weberpro.Activity.SingleDownloadDetailsActivity" />
+
+        <service
+            android:name="com.github.rezalotfi01.weberpro.Service.BubbleButtonService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name="com.github.rezalotfi01.weberpro.Activity.FloatingActivity"
+            android:configChanges="layoutDirection|locale"
+            android:enabled="true"
+            android:theme="@style/PopupTheme" />
+
+
+        <meta-data
+            android:name="AdadToken"
+            android:value="e98b184ba8a84a1fa33f695a0f63e7b7" />
+        <meta-data
+            android:name="AdadShowRemoveAds"
+            android:value="false" />
+        <meta-data
+            android:name="AdadLogging"
+            android:value="true" />
+        <meta-data
+            android:name="AdadLoggingLevel"
+            android:value="debug" />
+
+        <service
+            android:name="com.github.rezalotfi01.weberpro.Service.StartDownloadJobService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity android:name="com.github.rezalotfi01.weberpro.Activity.AboutActivity"
+            android:theme="@style/AboutActivityStyle"/>
+    </application>
+
+</manifest>

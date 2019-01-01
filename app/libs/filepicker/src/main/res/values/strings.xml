@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FilePicker</string>
+    <string name="choose_button_label">انتخاب</string>
+    <string name="cancel_button_label">انصراف</string>
+    <string name="default_dir">/sdcard</string>
+    <string name="label_parent_directory">پوشه بالاتر</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!-- Scheme -->
+    <string name="app_scheme_http">
+        http
+    </string>
+    <string name="app_scheme_https">
+        https
+    </string>
+
+    <!-- Info -->
+    <string name="app_name">
+        Weber Pro
+    </string>
+    <string name="app_version">
+        1.0.2
+    </string>
+
+    <!-- AndroidSlidingUpPanel -->
+    <string name="license_title_android_sliding_up_panel">
+        Android Sliding Up Panel
+    </string>
+    <string name="license_content_android_sliding_up_panel">
+        Apache License Version 2.0
+    </string>
+    <string name="license_author_android_sliding_up_panel">
+        Umano: News Read To You
+    </string>
+    <string name="license_url_android_sliding_up_panel">
+        http://git.io/vUruG
+    </string>
+
+    <!-- Android-SwipeToDismiss -->
+    <string name="license_title_android_swipe_to_dismiss">
+        Android Swipe-to-Dismiss Sample Code
+    </string>
+    <string name="license_content_android_swipe_to_dismiss">
+        Apache License Version 2.0
+    </string>
+    <string name="license_author_android_swipe_to_dismiss">
+        Roman Nurik
+    </string>
+    <string name="license_url_android_swipe_to_dismiss">
+        http://git.io/vUruO
+    </string>
+
+    <!-- AndroidAgo -->
+    <string name="license_title_android_ago">
+        android-ago
+    </string>
+    <string name="license_content_android_ago">
+        Apache License Version 2.0
+    </string>
+    <string name="license_author_android_ago">
+        Kiran Rao
+    </string>
+    <string name="license_url_android_ago">
+        http://git.io/vUrum
+    </string>
+
+    <!-- DynamicGrid -->
+    <string name="license_title_dynamic_grid">
+        DynamicGrid
+    </string>
+    <string name="license_content_dynamic_grid">
+        Apache License Version 2.0
+    </string>
+    <string name="license_author_dynamic_grid">
+        askerov
+    </string>
+    <string name="license_url_dynamic_grid">
+        http://git.io/vTHZH
+    </string>
+
+</resources>

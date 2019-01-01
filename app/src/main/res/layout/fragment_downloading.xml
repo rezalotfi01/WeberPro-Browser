@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.github.rezalotfi01.weberpro.Fragment.DownloadingFragment"
+    android:orientation="horizontal"
+    android:id="@+id/fragment_downloading_layout_view"
+    android:animateLayoutChanges="false">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:id="@+id/list_downloading">
+    </ListView>
+
+    <com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout
+        android:id="@+id/fabtoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:showDuration="600"
+        app:hideDuration="300"
+        app:horizontalMargin="30dp"
+        app:verticalMargin="30dp"
+        app:fadeInFraction="0.2"
+        app:fabId="@+id/fabtoolbar_fab"
+        app:containerId="@+id/fabtoolbar_container"
+        app:fabToolbarId="@+id/fabtoolbar_toolbar"
+        app:fabDrawableAnimationEnabled="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fabtoolbar_container"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fabtoolbar_fab"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                app:backgroundTint="@color/blue_500"
+                app:fabSize="normal"
+                android:src="@drawable/ic_fab_menu"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/fabtoolbar_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/blue_500"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/toolbar_add"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:padding="2dp"
+                android:src="@drawable/ic_toolbar_add"/>
+
+            <ImageView
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:id="@+id/toolbar_start_all"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ic_toolbar_start"/>
+
+            <ImageView
+                android:layout_width="37.5dp"
+                android:layout_height="37.5dp"
+                android:id="@+id/toolbar_stop_all"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/ic_toolbar_stop"/>
+
+        </RelativeLayout>
+    </com.github.fafaldo.fabtoolbar.widget.FABToolbarLayout>
+
+
+</RelativeLayout>

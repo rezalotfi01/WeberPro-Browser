@@ -1,0 +1,73 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:icon="@null">
+
+   <!-- <PreferenceCategory android:title="@string/pref_planing_category_title">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_planing_download"
+            android:title="@string/pref_planing_download_check_title"
+            android:summary="@string/pref_planing_download_check_summary"/>
+
+
+        <Preference
+            android:key="planing_start_time"
+            android:title="@string/pref_planing_start_time_title"
+            android:summary="@string/pref_planing_start_time_summary"
+            android:onClick="onClickStartTime"
+            android:dependency="check_box_planing_download"/>
+
+
+        <Preference
+            android:key="planing_stop_time"
+            android:title="@string/pref_planing_stop_time_title"
+            android:summary="@string/pref_planing_stop_time_summary"
+            android:onClick="onClickStopTime"
+            android:dependency="check_box_planing_download"/>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_turn_on_wifi"
+            android:title="@string/pref_turn_on_wifi_title"
+            android:summary="@string/pref_turn_on_wifi_summary"
+            android:dependency="check_box_planing_download"/>
+
+&lt;!&ndash;        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_turn_on_mobile_data"
+            android:title="@string/pref_turn_on_mobile_data_title"
+            android:summary="@string/pref_turn_on_mobile_data_summary"
+            android:dependency="check_box_planing_download"/>&ndash;&gt;
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_turn_off_wifi"
+            android:title="@string/pref_turn_off_wifi_title"
+            android:summary="@string/pref_turn_off_wifi_summary"
+            android:dependency="check_box_planing_download"/>
+
+&lt;!&ndash;        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="check_box_turn_off_mobile_data"
+            android:title="@string/pref_turn_off_mobile_data_title"
+            android:summary="@string/pref_turn_off_mobile_data_summary"
+            android:dependency="check_box_planing_download"/>&ndash;&gt;
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="check_box_turn_off_scheduler"
+            android:title="@string/pref_turn_off_scheduler_title"
+            android:summary="@string/pref_turn_off_scheduler_summary"
+            android:dependency="check_box_planing_download"/>
+
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="check_box_exit_app"
+            android:title="@string/pref_exit_app_title"
+            android:summary="@string/pref_exit_app_summary"
+            android:dependency="check_box_planing_download"/>
+
+    </PreferenceCategory>-->
+
+</PreferenceScreen>

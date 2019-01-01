@@ -1,0 +1,3 @@
+include ':app', ':filepicker', ':taptargetview'
+project(':filepicker').projectDir = new File('app/libs/filepicker')
+project(':taptargetview').projectDir = new File('app/libs/taptargetview')

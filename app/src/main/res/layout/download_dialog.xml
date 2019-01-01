@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/download_dialog_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/download_dialog_title"
+        android:textSize="22sp"
+        android:textColor="@color/blue_500" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/download_dialog_title"
+        android:layout_marginTop="10dp"
+        android:id="@+id/layout_download_fields">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_download_link"
+        android:layout_marginTop="5dp">
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_download_link"
+        android:lines="5"
+        android:minLines="1"
+        android:maxLines="10"
+        android:inputType="textMultiLine|textCapSentences"
+        android:hint="@string/download_address_dialog_hint"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/blue_500"
+        android:animateLayoutChanges="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/img_dialog_setting"
+        android:layout_toRightOf="@+id/edit_download_link"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:src="@drawable/ic_download_dialog_setting"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_download_name"
+        android:layout_below="@+id/layout_download_link"
+        android:layout_marginTop="26dp">
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_download_file_name"
+        android:lines="5"
+        android:minLines="1"
+        android:maxLines="10"
+        android:inputType="textMultiLine|textCapSentences"
+        android:hint="@string/download_dialog_name_hint"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/blue_500"
+        android:animateLayoutChanges="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/img_dialog_folder"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/edit_download_file_name"
+        android:layout_marginLeft="10dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_download_dialog_folder"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDownloadSizeInDialog"
+        android:layout_below="@+id/layout_download_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/download_dialog_zero_size_text"
+        android:textColor="@color/blue_500"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/layout_download_fields"
+        android:layout_marginTop="5dp">
+
+    <Button
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:id="@+id/dialog_button_start"
+        android:layout_alignParentLeft="true"
+        android:text="@string/download_dialog_start_button"
+        android:textColor="@color/blue_500"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"/>
+
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:id="@+id/dialog_button_add"
+        android:layout_toRightOf="@+id/dialog_button_start"
+        android:layout_marginLeft="55dp"
+        android:text="@string/download_dialog_add_button"
+        android:textColor="@color/blue_500"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"/>
+    </RelativeLayout>
+
+</RelativeLayout>

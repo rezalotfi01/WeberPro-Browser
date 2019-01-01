@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:elastic="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.SingleDownloadDetailsActivity"
+    android:background="@color/weber_orange">
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button_download_detail_share"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="30dp"
+        android:src="@drawable/ic_download_detail_share"
+        android:background="@color/transparent"/>
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button_download_detail_delete"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="30dp"
+        android:src="@drawable/ic_download_detail_delete"
+        android:background="@color/transparent"/>
+
+
+    <is.arontibo.library.ElasticDownloadView
+        android:id="@+id/elastic_download_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        elastic:backgroundColor="@color/weber_orange"
+        android:layout_centerInParent="true" />
+        <!--elastic:backgroundColor="#ED563F"-->
+
+
+<!--    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button_download_detail_pause"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:src="@drawable/ic_download_detail_pause"
+        android:background="@color/transparent"/>-->
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/button_download_detail_resume"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="30dp"
+        android:src="@drawable/ic_download_detail_resume"
+        android:background="@color/transparent"/>
+
+</RelativeLayout>

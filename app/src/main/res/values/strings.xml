@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Shortcuts strings -->
+    <string name="shortcut_new_tab_short">
+        New tab
+    </string>
+    <string name="shortcut_new_download_short">
+        New download
+    </string>
+    <string name="shortcut_new_download_not_supported">
+        The download shortcut is only compatible with weberPro download manager. To continue, you must set the weberPro download manager as default in browser Setting.
+    </string>
+
+    <!-- First run permission requests -->
+    <string name="permission_storage_granted">
+        Permission granted !
+    </string>
+    <string name="permission_storage_denied">
+        Permission denied, The application may not work properly
+    </string>
+    <string name="permission_location_granted">
+        Location permission granted !
+    </string>
+    <string name="permission_location_denied">
+        Can not enable this option without location access, For security reason it is recommended do not allow websites to access location in unnecessary cases.
+    </string>
+    <string name="permission_draw_request">
+        To use the Weber floating browser feature there is a need to enable "draw over other apps" permission. please click on the OK button then enable this permission.
+    </string>
+
+
+    <!-- First run intro screen strings -->
+    <string name="intro_omnibox_swipe_and_text_title">
+        Web Pages manager
+    </string>
+    <string name="intro_omnibox_swipe_and_text_description">
+        To view and control the opened web pages and tabs, drag (swipe) this to the top
+        \n
+        Also, please click here to type URL or enter searchable word
+    </string>
+
+    <string name="intro_omnibox_bookmark_title">
+        Bookmark
+    </string>
+    <string name="intro_omnibox_bookmark_description">
+        From here you can add the WebSites to your bookmark
+    </string>
+
+    <string name="intro_omnibox_menu_title">
+        Application Menu
+    </string>
+    <string name="intro_omnibox_menu_description">
+        From here you can access the menu options
+    </string>
+
+    <string name="intro_tab_title">
+        Tabs Manager
+    </string>
+    <string name="intro_tab_description">
+        With a swipe tab to the top or bottom, you can close it
+        \n
+        You can also switch between them by clicking on the tabs
+    </string>
+
+    <string name="intro_omnibox_swipe_to_switch_title">
+        Swipe to switch
+    </string>
+    <string name="intro_omnibox_swipe_to_switch_description">
+        swipe left or right to switch tabs
+    </string>
+
+    <string name="intro_tab_swipe_title">
+        Opened tabs
+    </string>
+    <string name="intro_tab_swipe_description">
+        swipe up or down to close tab
+        \n
+        click on tab to open webpage
+    </string>
+    <string name="intro_tab_add_title">
+        New tab
+    </string>
+    <string name="intro_tab_add_description">
+        click on this button to add new tab
+    </string>
+
+    <!-- AndroidAgo -->
+    <string name="android_ago_just_now">
+        Just Now !
+    </string>
+
+    <!-- Album -->
+    <string name="album_title_bookmarks">
+        Bookmarks
+    </string>
+    <string name="album_title_history">
+        History
+    </string>
+    <string name="album_title_home">
+        Home page
+    </string>
+    <string name="album_untitled">
+        Untitled
+    </string>
+
+    <!--Message For Replace Download File-->
+    <string name="download_exist_message">
+        A file with this name already exists, do you want to replace it ?
+    </string>
+    <!--Download Activity Items-->
+    <string name="downloading_caption">
+        downloading
+    </string>
+    <string name="downloaded_caption">
+        completed
+    </string>
+
+    <!-- Drawer Items -->
+
+    <string name="item_bookmarks">
+        Bookmarks
+    </string>
+    <string name="item_share">
+        Share
+    </string>
+    <string name="item_add_to_home">
+        Add to home
+    </string>
+    <string name="share_page_sent">
+        <!-- sent from WeberPro Browser -->
+    </string>
+    <string name="intent_choose">
+        choose application
+    </string>
+    <string name="item_history">
+        History
+    </string>
+    <string name="item_setting">
+        Setting
+    </string>
+    <string name="item_screenshot">
+        Take screenshot
+    </string>
+    <string name="item_PDF">
+        Save page
+    </string>
+    <string name="item_downloads">
+        Downloads
+    </string>
+    <string name="item_Find">
+        Find in page
+    </string>
+    <string name="item_about">
+        About
+    </string>
+
+    <!-- Downloads -->
+    <string name="downloads_label">
+        Downloads
+    </string>
+    <string name="download_address_dialog_hint">
+        Enter link or address
+    </string>
+    <string name="download_dialog_name_hint">
+        File name
+    </string>
+    <string name="download_dialog_title">
+        Download
+    </string>
+    <string name="download_dialog_start_button">
+        start download
+    </string>
+    <string name="download_dialog_add_button">
+        Add to list
+    </string>
+    <string name="download_dialog_size_text">
+        File size :
+    </string>
+    <string name="download_dialog_size_unknown_text">
+        File size : unknown
+    </string>
+    <string name="download_dialog_zero_size_text">
+        File size : 0
+    </string>
+    <string name="download_dialog_edittext_error">
+        This field cannot be blank
+    </string>
+    <!-- Clear -->
+    <string name="clear_label">
+        Clear
+    </string>
+    <string name="clear_menu_done_all">
+        Done all
+    </string>
+    <string name="clear_title_quit">
+        Clear when application exits
+    </string>
+    <string name="clear_title_bookmarks">
+        Clear Bookmarks
+    </string>
+    <string name="clear_title_cache">
+        Clear Cache
+    </string>
+    <string name="clear_title_cookie">
+        Clear Cookies
+    </string>
+    <string name="clear_title_form_data">
+        Clear Form data
+    </string>
+    <string name="clear_title_history">
+         Clear History
+    </string>
+    <string name="clear_title_passwords">
+        Clear Passwords
+    </string>
+
+    <!-- Dialog -->
+    <string name="dialog_save_title">
+        Select the output file format
+    </string>
+    <string name="dialog_title_hint">
+        Input Title
+    </string>
+    <string name="dialog_se_hint">
+        https://www.google.com/search?q=
+    </string>
+    <string name="dialog_ua_hint">
+        Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2228.0 Safari/537.36
+    </string>
+    <string name="dialog_sign_in_username">
+        Username
+    </string>
+    <string name="dialog_sign_in_password">
+        Password
+    </string>
+    <string name="dialog_button_positive">
+        OK
+    </string>
+    <string name="dialog_button_negative">
+        Cancel
+    </string>
+    <string name="dialog_button_custom">
+        Custom
+    </string>
+    <string name="dialog_title_download">
+        Do you want to download the file?
+    </string>
+    <string name="dialog_title_resubmission">
+        Resubmit
+    </string>
+    <string name="dialog_title_warning">
+        Warning
+    </string>
+    <string name="dialog_title_sign_in">
+        Sign in
+    </string>
+    <string name="dialog_content_resubmission">
+        Would you like to resubmit your data?
+    </string>
+    <string name="dialog_content_ssl_error">
+        The certificate of the site is not trusted. Proceed anyway?
+    </string>
+    <string name="dialog_content_upload">
+        Currently, File upload is only supported on Android 5.0 and Above.
+    </string>
+
+    <!-- List -->
+    <string name="list_empty">
+        Current list is empty
+    </string>
+
+    <!-- Main -->
+    <string name="main_menu_new_tab">
+        New tab
+    </string>
+    <string name="main_menu_copy_link">
+        Copy link
+    </string>
+    <string name="main_menu_save">
+        Save
+    </string>
+    <string name="main_omnibox_input_hint">
+        Search or type URL
+    </string>
+    <string name="main_search_engine_input_hint">
+        Search the Web
+    </string>
+    <string name="main_relayout_ok">
+        OK
+    </string>
+    <string name="main_about_blank">
+        about:blank
+    </string>
+
+    <!-- Notification -->
+    <string name="notification_content_holder">
+        Click to View Pages
+    </string>
+
+    <!-- Readability -->
+    <string name="readability_label">
+        Readability
+    </string>
+    <string name="readability_menu_background">
+        Background
+    </string>
+    <string name="readability_menu_share">
+        Share
+    </string>
+    <string name="readability_empty">
+        Failed to load Readability, Please check your network connection.
+    </string>
+
+    <!-- Search -->
+    <string name="search_hint">
+        Search
+    </string>
+
+    <!-- Settings -->
+    <string name="setting_label">
+        Settings
+    </string>
+    <!-- Browser setting -->
+    <string name="setting_title_browser">
+        Browser Settings
+    </string>
+    <!-- Search engine -->
+    <string name="setting_title_search_engine">
+        Search Engine
+    </string>
+    <string name="setting_summary_search_engine_google">
+        Google
+    </string>
+    <string name="setting_summary_search_engine_duckduckgo">
+        DuckDuckGo
+    </string>
+    <string name="setting_summary_search_engine_yahoo">
+        Yahoo!
+    </string>
+    <string name="setting_summary_search_engine_bing">
+        Bing
+    </string>
+    <string name="setting_summary_search_engine_custom">
+        Custom
+    </string>
+    <!-- Notification -->
+    <string name="setting_title_notification_priority">
+        Notification Priority
+    </string>
+    <string name="setting_summary_notification_priority_default">
+        Default
+    </string>
+    <string name="setting_summary_notification_priority_high">
+        High
+    </string>
+    <string name="setting_summary_notification_priority_low">
+        Low
+    </string>
+    <!-- Omnibox position -->
+    <string name="setting_title_omnibox_position">
+        Omnibox Position
+    </string>
+    <string name="setting_summary_omnibox_position_top">
+        Top
+    </string>
+    <string name="setting_summary_omnibox_position_bottom">
+        Bottom
+    </string>
+    <!-- Omnibox control -->
+    <string name="setting_title_omnibox_control">
+        Omnibox Control
+    </string>
+    <string name="setting_summary_omnibox_control">
+        Swipe omnibox left/right to switch tabs
+    </string>
+    <!-- Bubble button status-->
+    <string name="setting_title_bubble_button_status">
+        Floating browser status
+    </string>
+    <string name="setting_summary_bub_always_active">
+        always active
+    </string>
+    <string name="setting_summary_bub_only_when_copy">
+        only when copy text
+    </string>
+    <string name="setting_summary_bub_always_inactive">
+        inactive
+    </string>
+    <string name="setting_summary_bub">
+        Bubble button status
+    </string>
+    <string name="bubble_notification_title">
+        Weber Pro
+    </string>
+    <string name="bubble_notification_content">
+        Weber Pro is running
+    </string>
+    <string name="bubble_removed">
+        Bubble Button Removed! You can re-enable it from Weber Pro settings
+    </string>
+    <!--Default downloader setting-->
+    <string name="setting_title_default_downloader">
+        Default downloader
+    </string>
+    <string name="setting_summary_default_downloader">
+        Default download manager
+    </string>
+    <string name="setting_summary_default_downloader_android">
+        Android default downloader
+    </string>
+    <string name="setting_summary_default_downloader_weber">
+        Weber Pro advanced download manager
+    </string>
+    <!-- Volume key scroll -->
+    <string name="setting_title_volume_control">
+        Volume buttons usage
+    </string>
+    <string name="setting_summary_vc_switch_tabs">
+        Switch Tabs
+    </string>
+    <string name="setting_summary_vc_scroll_webpage">
+        Scroll Webpage
+    </string>
+    <string name="setting_summary_vc_system_default">
+        System Default
+    </string>
+    <!-- Images -->
+    <string name="setting_title_images">
+        Images
+    </string>
+    <string name="setting_summary_images">
+        Load images in webpage
+    </string>
+    <!-- Cookies -->
+    <string name="setting_title_cookie">
+        Cookies
+    </string>
+    <string name="setting_summary_cookie">
+        Enable Cookies
+    </string>
+    <!-- JavaScript -->
+    <string name="setting_title_javascript">
+        JavaScript
+    </string>
+    <string name="setting_summary_javascript">
+        Enable JavaScript
+    </string>
+    <!-- Location -->
+    <string name="setting_title_location">
+        Location
+    </string>
+    <string name="setting_summary_location">
+        Allow websites to access your location
+    </string>
+    <!-- Multiple windows -->
+    <string name="setting_title_multiple_windows">
+        Multiple Windows
+    </string>
+    <string name="setting_summary_multiple_windows">
+        Enable Multiple windows
+    </string>
+    <!-- Scroll bar -->
+    <string name="setting_title_scroll_bar">
+        Scroll Bar
+    </string>
+    <string name="setting_summary_scroll_bar">
+        Show/Hide scroll bar on webpages
+    </string>
+    <!-- Text reflow -->
+    <string name="setting_title_text_reflow">
+        Text Reflow
+    </string>
+    <string name="setting_summary_text_reflow">
+         Enable text reflow
+    </string>
+    <!-- User Agent -->
+    <string name="setting_title_user_agent">
+        User Environment
+    </string>
+    <string name="setting_summary_user_agent_default">
+        Mobile
+    </string>
+    <string name="setting_summary_user_agent_desktop">
+        Desktop
+    </string>
+    <string name="setting_summary_user_agent_custom">
+        Custom
+    </string>
+    <!-- Rendering -->
+    <string name="setting_title_rendering">
+        Webpage Rendering
+    </string>
+    <string name="setting_summary_rendering_default">
+        Default
+    </string>
+    <string name="setting_summary_rendering_grayscale">
+        Grayscale
+    </string>
+    <string name="setting_summary_rendering_inverted">
+        Inverted
+    </string>
+    <string name="setting_summary_rendering_inverted_grayscale">
+        Inverted Grayscale
+    </string>
+    <!-- AdBlock setting -->
+    <string name="setting_title_adblock">
+        AdBlock
+    </string>
+    <string name="setting_summary_adblock">
+        Enable AdBlock
+    </string>
+    <string name="setting_title_whitelist">
+        Whitelist
+    </string>
+    <string name="setting_summary_whitelist">
+        Allow these sites show ads
+    </string>
+    <string name="setting_title_export_whilelist">
+        Export whitelist
+    </string>
+    <string name="setting_title_import_whilelist">
+        Import whitelist
+    </string>
+    <string name="whilelist_filename">
+        WeberProWhitelist
+    </string>
+    <!-- Readability setting -->
+    <string name="setting_title_readability">
+        Readability
+    </string>
+    <string name="setting_title_token">
+        Token
+    </string>
+    <string name="setting_summary_readability">
+        Enable Readability
+    </string>
+    <string name="setting_summary_token">
+        Set Readability Token
+    </string>
+    <!-- Data setting -->
+    <string name="setting_title_data">
+        Data setting
+    </string>
+    <!-- Passwords -->
+    <string name="setting_title_passwords">
+        Password
+    </string>
+    <string name="setting_summary_passwords">
+        Save Passwords
+    </string>
+    <!-- Bookmarks -->
+    <string name="setting_title_export_bookmarks">
+        Export Bookmarks
+    </string>
+    <string name="setting_title_import_bookmarks">
+        Import Bookmarks
+    </string>
+    <string name="bookmarks_filename">
+        WeberProBookmarks
+    </string>
+    <!-- Clear -->
+    <string name="setting_title_clear_control">
+        Clear Control
+    </string>
+    <!-- Others setting -->
+    <string name="setting_title_others">
+        Others
+    </string>
+    <!-- Version -->
+    <string name="setting_title_version">
+        Version
+    </string>
+    <!-- License -->
+    <string name="setting_title_license">
+        License
+    </string>
+    <!-- Contact -->
+    <string name="setting_title_about">
+        About
+    </string>
+
+    <!-- Toast -->
+    <string name="toast_add_bookmark_successful">
+        Bookmark Successfully Added
+    </string>
+    <string name="toast_add_bookmark_failed">
+        Can\'t add this page to bookmark
+    </string>
+    <string name="toast_add_to_home_successful">
+        Successfully added to Home
+    </string>
+    <string name="toast_add_to_home_failed">
+        Failed to add to Home
+    </string>
+    <string name="toast_add_token_successful">
+        Successfully added Readability API
+    </string>
+    <string name="toast_add_whitelist_successful">
+        Successfully added Domain
+    </string>
+    <string name="toast_already_at_the_front">
+        Already at the front
+    </string>
+    <string name="toast_already_exist_in_home">
+        Already exist in home
+    </string>
+    <string name="toast_clear_successful">
+        Successfully Cleared
+    </string>
+    <string name="toast_clear_failed">
+        Failed to Clear
+    </string>
+    <string name="toast_copy_successful">
+        Successfully Copied
+    </string>
+    <string name="toast_delete_bookmark_successful">
+        Successfully Deleted
+    </string>
+    <string name="toast_delete_successful">
+        Successfully Deleted
+    </string>
+    <string name="toast_domain_already_exists">
+        Domain already exists
+    </string>
+    <string name="toast_double_taps_quit">
+        Press again to exit
+    </string>
+    <string name="toast_emoji">
+        (๑•̀ㅂ•́)و✧
+    </string>
+    <string name="toast_export_bookmarks_successful">
+        Exported bookmarks file at:&#160;
+    </string>
+    <string name="toast_export_bookmarks_failed">
+        Failed to export Bookmarks
+    </string>
+    <string name="toast_export_whitelist_successful">
+        Exported whitelist file at:&#160;
+    </string>
+    <string name="toast_export_whitelist_failed">
+        Failed to export Whitelist
+    </string>
+    <string name="toast_import_bookmarks_successful">
+        Imported bookmarks count:&#160;
+    </string>
+    <string name="toast_import_bookmarks_failed">
+        Failed to import Bookmarks
+    </string>
+    <string name="toast_import_whitelist_successful">
+        Imported domains count:&#160;
+    </string>
+    <string name="toast_import_whitelist_failed">
+        Failed to import Whitelist
+    </string>
+    <string name="toast_input_empty">
+        You haven\'t input anything
+    </string>
+    <string name="toast_invalid_domain">
+        Invalid domain
+    </string>
+    <string name="toast_load_error">
+        Can\'t load this URL
+    </string>
+    <string name="toast_load_in_background">
+        Loading in background
+    </string>
+    <string name="toast_need_restart">
+        Please restart the application for changes to take effect
+    </string>
+    <string name="toast_new_tab_successful">
+        Successfully opened in a new tab
+    </string>
+    <string name="toast_open_file_manager_failed">
+        Failed to open File Manager
+    </string>
+    <string name="toast_refresh_failed">
+        Can\'t refresh this page
+    </string>
+    <string name="toast_relayout_successful">
+        Successfully Relayout
+    </string>
+    <string name="toast_screenshot_successful">
+        Saved screenshot at:&#160;
+    </string>
+    <string name="toast_screenshot_failed">
+        Failed to capture Screenshot
+    </string>
+    <string name="toast_share_failed">
+        Can\'t share this page
+    </string>
+    <string name="toast_start_download">
+        Starting download
+    </string>
+    <string name="toast_token_empty">
+        Please set Readability token
+    </string>
+    <string name="toast_wait_a_minute">
+        Please wait for a moment
+    </string>
+
+    <string name="toast_download_starts">
+        Starting file download
+    </string>
+    <string name="toast_download_added">
+        Added to download pending list
+    </string>
+    <string name="toast_download_already_running">
+        The download action is now running
+    </string>
+    <string name="toast_download_added_to_queue">
+        Added to download queue
+    </string>
+    <string name="toast_download_successful">
+        Successfully downloaded !
+    </string>
+    <string name="toast_download_paused">
+        Download stopped
+    </string>
+    <string name="toast_download_pausing_because_limits">
+        Download stopped (due to internet usage restrictions that you set)
+    </string>
+    <string name="toast_download_pausing_because_all_limits">
+        All Downloads stopped (due to internet usage restrictions that you set)
+    </string>
+    <string name="toast_please_disable_synchronous_download">
+        This feature can only be used for asynchronous downloads, yo use this feature please disable synchronous download from the above settings
+    </string>
+    <string name="toast_download_cant_resume">
+        The network is not available, there is no way to continue downloading
+    </string>
+    <string name="toast_download_failed">
+        Unfortunately download failed
+    </string>
+    <string name="toast_download_not_respond">
+        No response from the server
+    </string>
+    <string name="toast_retrying_download">
+        Error in accessing the server, reconnecting…
+    </string>
+
+
+    <string name="download_progress_completed">
+        Downloaded
+    </string>
+    <string name="download_progress_paused">
+        Paused
+    </string>
+    <string name="download_progress_error">
+        Error
+    </string>
+
+    <string name="download_details_dialog_is_delete_file">
+        Delete with file
+    </string>
+    <string name="download_details_dialog_delete">
+        Delete
+    </string>
+    <string name="download_detail_are_you_sure">
+        Are you sure you want to remove this download?
+    </string>
+
+
+    <!-- Token -->
+    <string name="token_label">
+        Token
+    </string>
+    <string name="token_edit_hint">
+        Readability token
+    </string>
+    <string name="token_add">
+        Add
+    </string>
+    <string name="token_desc">
+        Go to https://www.readability.com/developers/api to get your own Readability token
+    </string>
+
+
+    <!-- Whitelist -->
+    <string name="whitelist_label">
+        Whitelist
+    </string>
+    <string name="whitelist_menu_clear">
+        Clear
+    </string>
+    <string name="whitelist_edit_hint">
+        Domain
+    </string>
+    <string name="whitelist_add">
+        Add
+    </string>
+
+
+    <!-- Strings related to Settings -->
+    <string name="title_activity_download_settings">
+        Downloads setting
+    </string>
+
+    <string name="pref_header_download_setting">
+        Downloads general setting
+    </string>
+
+    <string name="pref_file_pick_title">
+        save folder
+    </string>
+    <string name="pref_file_pick_summary">
+        Default downloads location
+    </string>
+
+    <string name="pref_auto_resume_title">
+        Auto resume
+    </string>
+    <string name="pref_auto_resume_summary">
+        Automatically resume download after error
+    </string>
+
+
+    <string name="pref_parts_number_message_title">
+        Number of threads
+    </string>
+    <string name="pref_parts_number_message_summary">
+        Select how much threads/parts to use for downloading
+    </string>
+    <string-array name="pref_parts_number_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+
+    <string name="pref_turn_on_mobile_data_title">
+        Enable mobile data
+    </string>
+    <string name="pref_turn_on_mobile_data_summary">
+        Enable mobile data at a specified time
+    </string>
+
+    <string name="pref_turn_on_wifi_title">
+        Enable Wi-Fi
+    </string>
+    <string name="pref_turn_on_wifi_summary">
+        Enable Wi-Fi at a specified time
+    </string>
+
+    <string name="toast_check_root">
+        Due to changes in Android 5 and later, This option is only active for Android devices under 5 or rooted phones and is not supported on your device
+    </string>
+
+    <string name="pref_downloads_number_message_title">
+         Synchronous download
+    </string>
+    <string name="pref_downloads_number_message_summary">
+         Download multiple files simultaneously
+    </string>
+
+    <string-array name="pref_downloads_number_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string name="pref_errors_number_title">
+        Maximum number of errors
+    </string>
+    <string name="pref_errors_number_summary">
+        Maximum number of errors allowed per download
+    </string>
+
+    <string name="pref__main_errors_number_title">
+        Maximum number of access errors
+    </string>
+    <string name="pref_main_errors_number_summary">
+        Maximum number of access errors allowed per download
+    </string>
+
+    <string name="pref_errors_pause_time_title">
+        Time of pause
+    </string>
+    <string name="pref_errors_pause_time_summary">
+        The amount of time to wait, after any error (per second)
+    </string>
+
+    <string-array name="pref_multi_threading_type_values">
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_multi_threading_type_titles">
+        <item>Smart</item>
+        <item>Normal</item>
+    </string-array>
+    <string name="pref_multi_threading_title">
+        Multi threading type
+    </string>
+    <string name="pref_multi_threading_summary_smart">
+        Smart
+    </string>
+    <string name="pref_multi_threading_summary_normal">
+        Normal
+    </string>
+    <string name="pref_downloading_general_setting">
+        Downloads general setting
+    </string>
+    <string name="pref_downloading_download_size_limits">
+        Size limits
+    </string>
+    <string name="pref_downloading_size_limits_checkbox_title">
+        Internet usage limit in downloads
+    </string>
+    <string name="pref_downloading_size_limits_checkbox_summary">
+        Enable limits in downloads (it will be disabled after stopping all downloads)
+    </string>
+    <string name="pref_downloading_size_limits_checkbox_active">
+        Usage limits enabled
+    </string>
+
+
+    <string name="pref_downloading_size_each_download_title">
+        Usage limits in each download
+    </string>
+    <string name="pref_downloading_size_each_download_summary">
+        Maximum Internet usage per download (per Megabyte)
+
+        , (it will be removed after stopping all downloads)
+    </string>
+
+    <string name="pref_downloading_size_all_downloads_title">
+        Usage limits in each queue
+    </string>
+    <string name="pref_downloading_size_all_downloads_summary">
+        Maximum Internet usage per asynchronous queue (per Megabyte)
+        , (it will be removed after stopping all downloads)
+    </string>
+
+    <!-- Settings for Planing -->
+    <string name="pref_header_planing">
+        Scheduling setting
+    </string>
+    <string name="pref_planing_category_title">
+        Scheduling options
+    </string>
+    <string name="pref_planing_download_check_title">
+        Download files
+    </string>
+    <string name="pref_planing_download_check_summary">
+        Start downloading files at specified time
+    </string>
+    <string name="pref_planing_start_time_title">
+        Start times
+    </string>
+    <string name="pref_planing_start_time_summary">
+        Start time is not set
+    </string>
+    <string name="planing_failed">
+        Unfortunately , download scheduling has encountered an error, please try again!
+    </string>
+    <string name="planing_notification_title">
+        Download Scheduling
+    </string>
+    <string name="planing_notification_text">
+        Ready to download files at specified time
+    </string>
+    <string name="pref_planing_stop_time_title">
+        stop time
+    </string>
+    <string name="pref_planing_stop_time_summary">
+        Stop time is not set
+    </string>
+    <string name="pref_turn_off_mobile_data_title">
+        Disable mobile data
+    </string>
+    <string name="pref_turn_off_mobile_data_summary">
+        Disable mobile data at stop time
+    </string>
+    <string name="pref_turn_off_wifi_title">
+        Disable Wi-Fi
+    </string>
+    <string name="pref_turn_off_wifi_summary">
+        Disable Wi-Fi data at stop time
+    </string>
+    <string name="pref_turn_off_scheduler_title">
+        Disable scheduler
+    </string>
+    <string name="pref_turn_off_scheduler_summary">
+        Disable downloads scheduler after downloads stopped/ended
+    </string>
+    <string name="pref_exit_app_title">
+        Close the app
+    </string>
+    <string name="pref_exit_app_summary">
+        Close Weber Pro after downloads stopped/ended
+    </string>
+
+    <string name="about_title">
+        Weber Pro
+    </string>
+    <string name="about_description">
+        Fast Web Browser with Advanced Download Manager and millions !! of options
+    </string>
+    <string name="about_version_title">
+        Version :
+    </string>
+
+
+</resources>

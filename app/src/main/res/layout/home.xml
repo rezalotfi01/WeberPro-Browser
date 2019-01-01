@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.github.rezalotfi01.weberpro.View.WeberRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/lutSearchEngine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <ImageView
+            android:id="@+id/search_engine_logo"
+            android:layout_width="220dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_google_compressed" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="45dp"
+            android:id="@+id/lut_search_engine_box"
+            android:layout_below="@+id/search_engine_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="17dp"
+            android:background="@color/white"
+            app:cardCornerRadius="22.5dp"
+            app:cardElevation="7dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgMagnifier"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@color/blue_500"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_search_main" />
+
+                <TextView
+                    android:id="@+id/search_engine_box_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:text="@string/main_search_engine_input_hint"
+                    android:textColor="#BDBDBD"
+                    android:textSize="@dimen/text_size_16sp" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/lut_search_engine_box"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+    <org.askerov.dynamicgrid.DynamicGridView
+        android:id="@+id/home_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lutSearchEngine"
+        android:layout_marginTop="10dp"
+        android:clipToPadding="false"
+        android:columnWidth="@dimen/layout_width_156dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:padding="@dimen/padding_16dp"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="@dimen/layout_height_12dp" />
+
+    <TextView
+        android:id="@+id/home_about_blank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/layout_margin_8dp"
+        android:gravity="center"
+        android:text="@string/main_about_blank"
+        android:textColor="@color/hint"
+        android:textSize="@dimen/text_size_14sp"
+        android:visibility="gone" />
+    <!--    android:background="#BDBDBD"-->
+</com.github.rezalotfi01.weberpro.View.WeberRelativeLayout>
